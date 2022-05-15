@@ -1,0 +1,204 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Edusite University</title>
+        <link href="{% static 'css/bootstrap12.css' %}" rel="stylesheet">
+        <link href="{% static 'css/component.css' %}" rel="stylesheet">
+        <link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet">
+		<link href="{% static 'css/svg.css' %}" rel="stylesheet">
+		<link href="{% static 'css/prettyPhoto.css' %}" rel="stylesheet">
+		<link href="{% static 'css/shortcodes.css' %}" rel="stylesheet">
+		<link href="{% static 'css/widget.css' %}" rel="stylesheet">
+		<link href="{% static 'css/typography.css' %}" rel="stylesheet">
+		<link href="{% static 'css/style12.css' %}" rel="stylesheet">
+		<link href="{% static 'css/color.css' %}" rel="stylesheet">
+        <link href="{% static 'css/responsive.css' %}" rel="stylesheet">
+
+		<form class="form-inline my-2 my-lg-0" action="/teacher/view/" method="get" >
+			<input class="form-control mr-sm-2" type="search" placeholder="Search Subjects" aria-label="Search" name="search-text">
+			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+		</form>
+
+</head>
+
+	<body>
+
+		<div class="iq_wrapper">
+            <header class="iq_header_1">
+            	<div class="container">
+                	<div class="iq_logo">
+                    	<a href="https://edusites.co.uk/?msclkid=bc4de148cf7a11ecad8e93fbd7772b23"><img src="{% static 'images/logo.png' %}" alt="Iqoniq Themes"></a>
+                    </div>
+                    <div class="iq_ui_element">
+                        <div class="iq_top_strip">
+                        	<div class="iq_top_contact pull-left">
+                            	<a href="https://t.me/backenddeveloper27"> Call us : +998 93 577 27 04</a>
+                                <a href="https://mail.google.com/mail/u/1/#inbox"> Email :  imronchik27@gmail.com</a>
+                            </div>
+                            <div class="iq_time_wrap pull-right"><i class="fa fa-clock-o"></i> Mon - Sat : 08:00 am - 05:30 pm </div>
+                        </div>
+                        <!-- Above the logo, all categories -->
+                        <div class="navigation-wrapper pull-left">
+                            <div class="navigation pull-left">
+                            	<ul>
+            						<li><a href="http://127.0.0.1:8000/">Home</a></li>
+                                    <li><a href="/index13/">About Us</a></li>
+            						<li><a href="/subject/view/">Courses</a>
+									</li>
+            						<li class="active"><a href="">Teachers</a>
+            						</li>
+            						<li><a href="/student/view/">Students</a>
+            						</li>
+            						<li><a href="/contact/">Countact Us</a></li>
+            					</ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- Course Grid -->
+			<div class="iner_banner course-single">
+				<div class="container">
+					<h5>Teacher grid</h5>
+					<div class="banner_iner_capstion">
+						<ul>
+							<li><a href="http://127.0.0.1:8000/">Home</a></li>
+							<li><a href="https://www.learndash.com/support/docs/add-ons/course-grid/">course grid</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		    <div class="iq_content_wrap">
+		        <section>
+		        	<div class="container">
+						<h2>Teachers Update</h2>
+						<form action="" method="post">{% csrf_token %}
+							{{ form }}
+							<button type="submit">Update</button>
+						</form>
+                            <!--Page Numbers-->
+                            <div class="col-md-12">
+                            	<div class="iqoniq-pagination text-center">
+				                    <a class="page-numbers" href="/subject/view/">1</a>
+				                    <a class="page-numbers current" href="">2</a>
+				                    <a class="page-numbers" href="/student/view/">3</a>
+				                    <a class="page-numbers border_none" href="#">...</a>
+				                    <a class="page-numbers" href="#">18</a>
+				                    <a class="page-numbers" href="#">19</a>
+				                    <a class="page-numbers" href="#">20</a>
+				                </div>
+                            </div>
+						</div>
+		            </div>
+		        </section>
+		    </div>
+
+		    <!-- After page number -->
+            <footer class="iq_footer_bg">
+            	<div class="container">
+            		<div class="row">
+            			<div class="col-md-3">
+            				<div class="iq_uni_title">
+            					<h4>university of <span>education</span></h4>
+            					<p>Lorem ipsum dolor sit amet elit, sed do eiusmod tempor incididunt ut labore et dolore .</p>
+            					<ul>
+            						<li><span>Moday - Friday</span> 08:00- 05:30</li>
+            						<li><span>Saturday</span> Closed</li>
+            						<li><span>Sunday</span> Closed</li>
+            					</ul>
+            				</div>
+            			</div>
+            			<div class="col-md-3">
+                            <div class="widget widget_archive">
+                                <h5 class="widget-title"><span>Our</span> Services</h5>
+                                <ul>
+                                    <li>
+                                        <a href="">Safety & Risk Management</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Facilities Services</a>
+                                    </li>
+                                    <li>
+                                        <a href="">University Police</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Campus Planning</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Mail Services</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Facilities IT</a>
+                                    </li>
+                                </ul>
+                            </div>
+            			</div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="widget widget-flickr">
+                                <h5 class="widget-title"><span>Our</span> Photo</h5>
+                                <div class="flickr-wrap">
+                                    <a class="flickrbadges" href="#"><img src="{% static 'images/featured-course-1.jpg' %}" alt=""></a>
+                                    <a class="flickrbadges" href="#"><img src="{% static 'images/flickr2.jpg' %}" alt=""></a>
+                                    <a class="flickrbadges" href="#"><img src="{% static 'images/flickr3.jpg' %}" alt=""></a>
+                                    <a class="flickrbadges" href="#"><img src="{% static 'images/flickr4.jpg' %}" alt=""></a>
+                                    <a class="flickrbadges" href="#"><img src="{% static 'images/flickr5.jpg' %}" alt=""></a>
+                                    <a class="flickrbadges" href="#"><img src="{% static 'images/flickr1.jpg' %}" alt=""></a>
+                                    <a class="flickrbadges" href="#"><img src="{% static 'images/featured-course-2.jpg' %}" alt=""></a>
+                                    <a class="flickrbadges" href="#"><img src="{% static 'images/featured-course-3.jpg' %}" alt=""></a>
+                                    <a class="flickrbadges" href="#"><img src="{% static 'images/featured-course-02.jpg' %}" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+            		</div>
+            	</div>
+            </footer>
+			<!-- Below! -->
+			<div class="footer_strip">
+                <h5><a target="_blank" href="https://www.templateshub.net">Templates Hub</a></h5>
+            </div>
+			<!-- Searching -->
+			<!-- <div class="modal fade" id="search-box" role="dialog">
+      			<button type="button" class="close" data-dismiss="modal" >&times;</button>
+				<div class="modal-dialog">
+					<div class="iqoniq_courses_search">
+						<div class="container">
+			            	<div class="iq_heading_1 text-center">
+			                    <h4>Search For<span>Our Courses</span></h4>
+			                    <p>Fill The Below Form and Start Searching</p>
+			                </div>
+							<div class="row">
+								<div class="col-md-3">
+									<div class="iq-input" >
+										<input class="first_input" type="text" placeholder="Search Words">
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="iq-input">
+			                            <input class="iq_link_1" type="submit" value="Start Search">
+									</div>
+								</div>    
+							</div> 
+						</div>
+					</div>
+				</div>
+			</div> -->
+			<!-- <form class="form-inline my-2 my-lg-0" action="/subject/view/" method="get">
+				<input class="form-control mr-sm-2" type="search" placeholder="Search Subjects" aria-label="Search" name="search-text">
+				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+			</form> -->
+		</div>
+        <script src="{% static 'js/jquery.js' %}"></script>
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'js/modernizr.custom.js' %}"></script>
+        <script src="{% static 'js/jquery.dlmenu.js' %}"></script>
+        <script src="{% static 'js/jquery.prettyPhoto.js' %}"></script>
+        <script src="{% static 'js/custom.js' %}"></script>
+
+  	</body>
+
+</html>

@@ -1,0 +1,265 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>University Blog Template</title>
+		<link href="https://fonts.googleapis.com/css?family=Lato:700%7CMontserrat:400,600" rel="stylesheet">
+
+		<link type="text/css" rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"/>
+
+		<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+
+		<link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}"/>
+
+    </head>
+	<body>
+
+		<header id="header">
+			<div class="container">
+				<div class="navbar-header">
+					<div class="navbar-brand">
+						<a class="logo" href="https://edusites.co.uk/?msclkid=bc4de148cf7a11ecad8e93fbd7772b23">
+							<img src="{% static 'images/logo.png' %}">
+						</a>
+					</div>
+				</div>
+				<nav id="nav">
+					<ul class="main-menu nav navbar-nav navbar-right">
+						<li><a href="http://127.0.0.1:8000/">Home</a></li>
+						<li><a href="/index13/">About</a></li>
+						<li><a href="/subject/view/">Courses</a></li>
+						<li><a href="/contact/">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<div class="hero-area section">
+			<tag background="{% static 'images/page-background.jpg' %}" class="bg-image bg-parallax overlay">  
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1 text-center">
+						<ul class="hero-area-tree">
+							<li><a href="/index/">Home</a></li>
+							<li>Blog</li>
+						</ul>
+						<h1 class="white-text">Blog Page</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="blog" class="section">
+
+			<div class="container">
+				<div class="row">
+					<div id="main" class="col-md-9">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="single-blog">
+									<div class="blog-img">
+										<a href="https://www.learningpotential.gov.au/articles/what-is-coding#:~:text=Coding%20is%20a%20list%20of,and%20do%20on%20a%20computer.">
+											<img src="{% static 'images/blog01.jpg' %}">
+										</a>
+									</div>
+									<h4><a href="https://www.learningpotential.gov.au/articles/what-is-coding#:~:text=Coding%20is%20a%20list%20of,and%20do%20on%20a%20computer.">Computers are amazing, but they can't think for themselves. They require people to give them instructions.</a></h4>
+									<div class="blog-meta">
+										<span class="blog-meta-author">By: <a href="https://t.me/backenddeveloper27">Akhmadjoniy Imron</a></span>
+										<div class="pull-right">
+											<span>10 May, 2022</span>
+											<span class="blog-meta-comments"><a href=""><i class="fa fa-comments"></i> 74</a></span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-6">
+								<div class="single-blog">
+									<div class="blog-img">
+										<a href="https://millcreekacademy.com/2016/01/the-value-of-reading-magazines/#:~:text=Reading%20magazines%20also%20provides%20students,and%20physical%20sciences%20to%20business.">
+											<img src="{% static 'images/blog02.jpg' %}">
+										</a>
+									</div>
+									<h4><a href="https://millcreekacademy.com/2016/01/the-value-of-reading-magazines/#:~:text=Reading%20magazines%20also%20provides%20students,and%20physical%20sciences%20to%20business.">Reading magazines also provides students with new information presented from a variety of non-fiction topics that draw upon an extensive array of disciplines, ranging from astrology to art, from economics to the environment, from biological and physical sciences to business.</a></h4>
+									<div class="blog-meta">
+										<span class="blog-meta-author">By: <a href="https://t.me/backenddeveloper27">Akhmadjoniy Imron</a></span>
+										<div class="pull-right">
+											<span>10 May, 2022</span>
+											<span class="blog-meta-comments"><a href=""><i class="fa fa-comments"></i> 53</a></span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-6">
+								<div class="single-blog">
+									<div class="blog-img">
+										<a href="https://www.techtarget.com/searchmobilecomputing/definition/tablet-PC#:~:text=A%20tablet%20is%20a%20wireless,out%20the%20idea%20in%201971.">
+											<img src="{% static 'images/blog03.jpg' %}">
+										</a>
+									</div>
+									<h4><a href="https://www.techtarget.com/searchmobilecomputing/definition/tablet-PC#:~:text=A%20tablet%20is%20a%20wireless,out%20the%20idea%20in%201971.">A tablet is a wireless, portable personal computer with a touchscreen interface. The tablet form factor is typically smaller than a notebook computer, but larger than a smartphone..</a></h4>
+									<div class="blog-meta">
+										<span class="blog-meta-author">By: <a href="https://t.me/backenddeveloper27">Akhmadjoniy Imron</a></span>
+										<div class="pull-right">
+											<span>10 May, 2022</span>
+											<span class="blog-meta-comments"><a href=""><i class="fa fa-comments"></i> 45</a></span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-6">
+								<div class="single-blog">
+									<div class="blog-img">
+										<a href="https://businessjargons.com/planning.html">
+											<img src="{% static 'images/blog04.jpg' %}">
+										</a>
+									</div>
+									<h4><a href="https://businessjargons.com/planning.html">Planning is the fundamental management function, which involves deciding beforehand, what is to be done, when is it to be done, how it is to be done and who is going to do it.</a></h4>
+									<div class="blog-meta">
+										<span class="blog-meta-author">By: <a href="https://t.me/backenddeveloper27">Akhmadjoniy Imron</a></span>
+										<div class="pull-right">
+											<span>10 May, 2022</span>
+											<span class="blog-meta-comments"><a href=""><i class="fa fa-comments"></i> 35</a></span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-md-12">
+								<div class="post-pagination">
+									<a href="/contact/" class="pagination-back pull-left">Back</a>
+									<ul class="pages">
+										<li class="active">1</li>
+										<li><a class="non-active" href="/blog/">2</a></li>
+										<li><a class="non-active" href="/blog/">3</a></li>
+										<li><a class="non-active" href="/blog/">4</a></li>
+									</ul>
+									<a href="/blog-post/" class="pagination-next pull-right">Next➡️</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div id="aside" class="col-md-3">
+						<div class="widget search-widget">
+							<form>
+								<input class="input" type="text" name="search">
+								<button><i class="fa fa-search"></i></button>
+							</form>
+						</div>
+
+						<div class="widget category-widget">
+							<h3>Categories</h3>
+							<a class="category" href="https://www.web.com/">Web <span>12</span></a>
+							<a class="category" href="https://www.w3schools.com/css/">Css <span>5</span></a>
+							<a class="category" href="https://wordpress.com/ru/">Wordpress <span>24</span></a>
+							<a class="category" href="https://www.w3schools.com/html/">Html <span>78</span></a>
+							<a class="category" href="https://www.business.com/">Business <span>36</span></a>
+						</div>
+
+						<div class="widget posts-widget">
+							<h3>Recents Posts</h3>
+							<div class="single-post">
+								<a class="single-post-img" href="https://www.w3schools.com/html/html_images.asp">
+									<img src="{% static 'images/post01.jpg' %}">
+								</a>
+								<a href="https://www.w3schools.com/html/html_images.asp">How to add image in html.</a>
+								<p><small>By : Akhmadjoniy Imron. 10 May, 2022</small></p>
+							</div>
+							<div class="single-post">
+								<a class="single-post-img" href="https://code.visualstudio.com/docs/python/tutorial-django">
+									<img src="{% static 'images/post02.jpg' %}">
+								</a>
+								<a href="https://code.visualstudio.com/docs/python/tutorial-django">Django Tutorial in Visual Studio Code.</a>
+								<p><small>By : Akhmadjoniy Imron. 10 May, 2022</small></p>
+							</div>
+							<div class="single-post">
+								<a class="single-post-img" href="https://phoenixnap.com/kb/how-to-install-python-3-windows">
+									<img src="{% static 'images/post03.jpg' %}">
+								</a>
+								<a href="https://phoenixnap.com/kb/how-to-install-python-3-windows">How to install python on desktop.</a>
+								<p><small>By : Akhmadjoniy Imron. 10 May, 2022</small></p>
+							</div>
+						</div>
+
+						<div class="widget tags-widget">
+							<h3>Tags</h3>
+							<a class="tag" href="https://www.web.com/">Web</a>
+							<a class="tag" href="https://photographylife.com/what-is-photography">Photography</a>
+							<a class="tag" href="https://www.w3schools.com/css/">Css</a>
+							<a class="tag" href="https://www.w3schools.com/html/html_responsive.asp">Responsive</a>
+							<a class="tag" href="https://wordpress.com/ru/">Wordpress</a>
+							<a class="tag" href="https://www.w3schools.com/html/">Html</a>
+							<a class="tag" href="https://www.website.com/?source=SC">Website</a>
+							<a class="tag" href="https://www.business.com/">Business</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+		<footer id="footer" class="section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="footer-logo">
+							<a class="logo" href="https://edusites.co.uk/?msclkid=bc4de148cf7a11ecad8e93fbd7772b23">
+								<img src="{% static 'images/logo.png' %}">
+							</a>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<ul class="footer-nav">
+							<li><a href="http://127.0.0.1:8000/">Home</a></li>
+							<li><a href="/index13/">About</a></li>
+							<li><a href="/subject/view/">Courses</a></li>
+							<li><a href="/contact/">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div id="bottom-footer" class="row">
+					<div class="col-md-4 col-md-push-8">
+						<ul class="footer-social">
+							<a class="facebook" href="https://ru-ru.facebook.com/">
+								<img src="https://www.facebook.com/images/fb_icon_325x325.png" height="50" width="50">
+							</a>
+							<a class="instagramm" href="https://www.instagram.com/">
+								<img src="https://icon-library.com/images/instagram-circle-icon-png/instagram-circle-icon-png-0.jpg" height="50" width="50">
+							</a>
+							<a class="youtube" href="https://www.youtube.com/">
+								<img src="https://www.kindpng.com/picc/m/11-114674_youtube-social-white-circle-youtube-logo-2017-png.png" height="55" width="55">
+							</a>
+							<a class="twitter" href="https://twitter.com/?lang=ru">
+								<img src="https://play-lh.googleusercontent.com/yQ0oBTVi7VttofA73DSrcf9zrBsnktxxxn6ZaAoSVV8GNFlJKh2Z-A0CT5XgOKWwE_fs" height="55" width="55">
+							</a>
+						</ul>
+					</div>
+
+					<div class="col-md-8 col-md-pull-4">
+						<div class="footer-copyright">
+							<span>&copy; Copyright 2018. All Rights Reserved. | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com">Colorlib</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<div id='preloader'><div class='preloader'></div></div>
+		<script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+
+	</body>
+</html>
